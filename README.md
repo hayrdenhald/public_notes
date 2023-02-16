@@ -1,5 +1,11 @@
 # public_notes
 
+## 🪬 PowerShell
+#### Prompt on newline
+```powershell
+function prompt {"PS $($executionContext.SessionState.Path.CurrentLocation)$('>' * ($nestedPromptLevel + 1))`r`n"}
+```
+
 ## 🐧 Linux
 #### Zombified prompt (appended to `~/.bashrc`)
 ```
