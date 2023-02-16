@@ -1,6 +1,9 @@
 # public_notes
 
 ## 🪬 PowerShell
+#### Micro editor
+See [install](https://github.com/zyedidia/micro#installation) instructions  
+
 #### Prompt on newline
 ```powershell
 function prompt {"PS $($executionContext.SessionState.Path.CurrentLocation)$('>' * ($nestedPromptLevel + 1))`r`n"}
