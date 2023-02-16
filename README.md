@@ -2,7 +2,7 @@
 
 ## 🪬 PowerShell
 #### Micro editor
-See [install](https://github.com/zyedidia/micro#installation) instructions  
+[Click here for downloading binaries](https://github.com/zyedidia/micro/releases), and then add to PATH  
 
 #### Prompt on newline
 ```powershell
