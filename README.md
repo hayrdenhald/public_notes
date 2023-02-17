@@ -2,7 +2,15 @@
 
 ## 🪬 PowerShell
 #### Micro editor
-[Click here for downloading binaries](https://github.com/zyedidia/micro/releases), and then add to PATH  
+1. [Click here for downloading binaries](https://github.com/zyedidia/micro/releases)
+2. Put in "Program files"
+3. add to PATH
+
+#### Create alias
+add the following to `$PROFILE`:
+```powershell
+Set-Alias -Name m -Value micro
+```
 
 #### Prompt on newline
 ```powershell
