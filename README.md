@@ -13,6 +13,19 @@ function prompt {"PS $($executionContext.SessionState.Path.CurrentLocation)$('>'
 #### Zombified prompt (appended to `~/.bashrc`)
 ```
 PROMPT_COMMAND='if [ $? = 0 ]; then PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n🙍 "; else PS1="${debian_chroot:+($debian_chroot)}\[\033[31;1m\]\u@\h\[\033[31;1m\]:\[\033[31;1m\]\w\[\033[00m\]\n🧟 "; fi'
+
+# alternatively
+function prompt
+{
+        if ( $? )
+        {
+                "$([char]27)[1;30m$PWD`n$([char]27)[0m$([char]27)[33m$Env:username 💁$([char]27)[0m "
+        }
+        else
+        {
+                "$([char]27)[1;30m$PWD`n$([char]27)[0m$([char]27)[1;36m$Env:username 🧟$([char]27)[0m "
+        }
+}
 ```
 #### Alias for updating (appended to `~/.bashrc`)
 ```sh
