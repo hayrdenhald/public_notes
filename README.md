@@ -11,10 +11,23 @@ add the following to `$PROFILE`:
 ```powershell
 Set-Alias -Name m -Value micro
 ```
-
 #### Prompt on newline
 ```powershell
 function prompt {"PS $($executionContext.SessionState.Path.CurrentLocation)$('>' * ($nestedPromptLevel + 1))`r`n"}
+```
+#### Conditional prompt
+```powershell
+function prompt
+{
+	if ( $? )
+	{
+ 		"$([char]27)[1;30m$PWD`n$([char]27)[0m$([char]27)[33m$Env:username 💁$([char]27)[0m "
+	}
+	else
+	{
+		"$([char]27)[1;30m$PWD`n$([char]27)[0m$([char]27)[1;36m$Env:username 🧟$([char]27)[0m "
+	}
+}
 ```
 
 ## 🐧 Linux
