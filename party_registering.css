@@ -1,0 +1,187 @@
+* {
+  background: #FDF6E3;
+  font-family: 'Noto Serif', serif;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  min-width: 400px;
+  width: 450px;
+  margin: auto;
+}
+
+main {
+  margin: 20px 15px 0 15px;
+}
+
+/* Footer */
+footer {
+  margin: 180px 0 5px 0;
+  padding: 5px 15px 5px 15px;
+  width: 450px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: xx-large;
+  border-top: 3px solid firebrick;
+  border-bottom: 3px solid firebrick;
+}
+
+
+/* Header */
+#header-container {
+  border-top: 3px solid firebrick;
+  border-bottom: 3px solid firebrick;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 0 5px 0;
+  padding: 5px 15px 5px 15px;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+  background-color: #eee6cc;
+}
+
+a:hover {
+  background-color: #eee6cc;
+  color: black;
+  cursor: pointer;
+  text-decoration: underline firebrick 2px;
+}
+
+#header-container h1 {
+  font-size: xx-large;
+  background-color: #eee6cc;
+  border-radius: 3px;
+  margin: 0px 0 0px 0;
+  padding: 3px 12px 3px 12px;
+  color: black;
+}
+
+#header-container div {
+  font-size: xx-large;
+}
+
+/* Header menu */
+#header-menu-container {
+  border-bottom: 3px solid firebrick;
+  margin: 0 0 5px 0;
+  align-items: center;
+  padding: 0 15px 5px 15px;
+  font-size: medium;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.link-button {
+  background-color: #eee6cc;
+  border-radius: 3px;
+  border: none;
+  font-weight: 900;
+  padding: 3px 12px 3px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: medium;
+}
+
+.link-button:hover {
+  cursor: pointer;
+  text-decoration: underline firebrick 2px;
+}
+
+.action-button {
+  background-color: rgb(212, 255, 212);
+  border-radius: 3px;
+  border: none;
+  font-weight: 900;
+  padding: 3px 12px 3px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: medium;
+}
+
+.action-button:hover {
+  cursor: pointer;
+  text-decoration: underline firebrick 2px;
+  background-color: rgb(162, 255, 162);
+}
+
+fieldset div {
+  margin-top: 5px;
+}
+
+.error-container {
+  border-radius: 3px;
+  background-color: lightcoral;
+  padding: 0px 5px 0px 5px;
+}
+
+.error {
+  background-color: lightcoral;
+}
+
+#registration-form input {
+  border-radius: 3px;
+}
+
+#registration-form form {
+  display: table;
+}
+
+#registration-form p {
+  display: table-row;
+}
+
+#registration-form label {
+  display: table-cell;
+}
+
+#registration-form input {
+  display: table-cell;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+}
+
+th {
+  border: none;
+}
+
+td {
+  padding: 4px 10px 4px 10px;
+  border: 1px solid black;
+}
+
+/* Password registration validation */
+.highlightRow>td {
+  background-color: mediumaquamarine;
+}
+
+#registration-form * input[type="text"],
+#registration-form * input[type="password"] {
+  border-color: green;
+}
+
+#registration-form * input[type="text"]:invalid,
+#registration-form * input[type="password"]:invalid {
+  border-color: red;
+}
+
+#registration-form * input[type="password"].mediumPassword {
+  border-color: yellow;
+}
