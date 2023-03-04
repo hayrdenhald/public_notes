@@ -21,11 +21,15 @@ function prompt
 {
 	if ( $? )
 	{
- 		"$([char]27)[1;30m$PWD`n$([char]27)[0m$([char]27)[33m$Env:username 💁$([char]27)[0m "
+		Write-Host "$(get-location)" -foregroundcolor DarkGray
+		Write-Host "$Env:username 💁" -nonewline -foregroundcolor Yellow
+	return ' '
 	}
 	else
 	{
-		"$([char]27)[1;30m$PWD`n$([char]27)[0m$([char]27)[1;36m$Env:username 🧟$([char]27)[0m "
+		Write-Host "$(get-location)" -foregroundcolor DarkGray
+		Write-Host "$Env:username 🧟" -nonewline -foregroundcolor Cyan
+	return ' '
 	}
 }
 ```
