@@ -23,14 +23,13 @@ function prompt
 	{
 		Write-Host "$(get-location)" -foregroundcolor DarkGray
 		Write-Host "$Env:username 💁" -nonewline -foregroundcolor Yellow
-	return ' '
 	}
 	else
 	{
 		Write-Host "$(get-location)" -foregroundcolor DarkGray
 		Write-Host "$Env:username 🧟" -nonewline -foregroundcolor Cyan
-	return ' '
 	}
+	return ' '
 }
 ```
 
