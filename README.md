@@ -22,7 +22,7 @@ function prompt
 	if ( $? )
 	{
 		Write-Host "$(get-location)" -foregroundcolor DarkGray
-		Write-Host "$Env:username 💁" -nonewline -foregroundcolor Yellow
+		Write-Host "$Env:username 🙇" -nonewline -foregroundcolor DarkRed
 	}
 	else
 	{
