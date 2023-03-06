@@ -1,5 +1,71 @@
 # public_notes
 
+## 💿 Fresh installations of programming languages
+#### 1. Python:
+- use `apt-get`
+#### 2. JavaScript/TypeScript:
+- install NVM (look at official GitHub page for installation)
+- install Node (run nvm list-remote to see available versions)
+- install TypeScript from Node
+#### 3. Rust:
+- `bash` command from their homepage
+#### 4. Haskell:
+- ghcup
+#### 5. Java:
+- install source JDK
+- append to `.bashrc`:
+```sh
+JAVA_HOME=/usr/lib/jvm/YOUR_JAVA_VERSION
+export PATH=$PATH:$JAVA_HOME/bin
+export JAVA_HOME
+```
+- verify it worked by running:
+```sh
+source .bashrc
+java -version
+```
+- install Apache Maven, link: https://maven.apache.org/download.cgi
+- append to `.profile`:
+```sh
+M2_HOME='<location of bin>'
+PATH="$M2_HOME/bin:$PATH"
+export PATH
+```
+- verify with `mvn -version`
+
+
+## 🚀 PopOS
+#### Take interactive screenshot
+Keyboard shortcut: `Ctrl+Alt+Shift+R`
+#### Remove window titles, and use shortcuts to close
+Disable `Show Window Titles` and close windows with shortcut `ctrl+q`
+#### Keyboard shortcut customizations
+```
+- Accessibility:
+Turn screen reader on or off: 	Disabled
+Turn zoom on or off: 		Disabled
+Zoom in: 			Disabled
+Zoom out: 			Disabled
+
+- Launchers:
+Home folder: 			Super+E
+Launch email client: 		Disabled
+Settings: 			Super+I
+
+- Navigation:
+Move to workspace above: 	Ctrl+Super+K
+Move to workspace below: 	Ctrl+Super+J
+Switch applications:		Disabled
+Switch windows:			Super+Tab
+Switch windows directly:	Alt+Tab
+
+- Windows:
+Toggle fullscreen mode:		Ctrl+Super+Down
+Toggle maximation state: 	Ctrl+Super+Up
+View split on left: 		Ctrl+Super+Left
+View split on right: 		Ctrl+Super+Right
+```
+
 ## 🪬 PowerShell
 #### Micro editor
 1. [Click here for downloading binaries](https://github.com/zyedidia/micro/releases)
